@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Cropper</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"/>
+
+    <!-- Cropper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css"/>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="wrapper">
+            <h1>Image Cropper</h1>
+            <p>Crop and download your image here.</p>
+
+            <div class="container">
+                <div class="image-container">
+                    <img id="image" />
+                </div>
+            </div>
+            <input type="file" id="file" accept="image/*" />
+            <label for="file">Choose A Photo</label>
+            <div class="options hide">
+                <input type="number" id="height-input" placeholder="Enter Height" max="780" />
+                <input type="number" id="width-input" placeholder="Enter Width" max="780" />
+                <button class="aspect-ratio-button">16:9</button>
+                <button class="aspect-ratio-button">4:3</button>
+                <button class="aspect-ratio-button">1:1</button>
+                <button class="aspect-ratio-button">2:3</button>
+                <button class="aspect-ratio-button">Free</button>
+            </div>
+            <div class="btns">
+                <button id="preview" class="hide">Preview</button>
+                <a href="" id="download" class="hide">Download</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Script JS -->
+    <script src="./script.js"></script>
+</body>
+</html>
